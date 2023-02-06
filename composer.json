@@ -1,0 +1,27 @@
+{
+    "name": "projetologin/projetologin",
+    "description": "projetologin",
+    "type": "projetologin",
+    "autoload": {
+
+        "psr-4": {
+
+            "Main\\":"vendor\\projetologin\\src"
+        }   
+
+
+    },
+    "authors": [
+        {
+            "name": "projetologin",
+            "email": "webmaster@projetologin.com.br"
+        }
+    ],
+    "require": {
+
+        "phpmailer/phpmailer":"5.2.22",
+        "slim/slim": "~2.0",
+        "rain/raintpl":"3.0.0"
+
+    }
+}

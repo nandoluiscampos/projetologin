@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;     
+}
+.title{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.title img{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+.titulo{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    color: rgb(255, 255, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(252, 30%, 95%);
+    color: hsl(0, 0%, 0%);
+    overflow: auto;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    
+}
+
+.container p{
+    font-size: 25px;
+}
+
+nav {
+    width: 100%;
+    background-color: hsl(252, 30%, 100%);
+    padding: 0.7rem 0;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+nav .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container .li .logomarca
+{
+    margin-right: 25%;
+}
+.search-bar {
+    background-color: hsl(252, 30%, 95%);
+    border-radius: 2rem;
+    padding: 0.6rem 1rem;
+}
+
+.search-bar input[type="search"]{
+    background: transparent;
+    width: 30vw;
+    margin-left: 1rem;
+    font-size: 0.9rem;
+    color: hsl(0, 0%, 0%);
+}
+
+nav .button {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.button a{
+    color:rgb(0, 0, 0)
+}
+.btn {
+    display: inline-block;
+    padding: 0.6rem 2rem;
+    font-weight: 500;
+    border-radius: 2rem;
+    cursor: pointer;
+    color: white;
+    background-color: hsl(0, 0%, 0%);
+    transition: all 300ms ease;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.link {
+    color: hsl(0, 0%, 0%);
+    cursor: pointer;
+}
+
+.link:hover{
+    text-decoration: underline;
+}
+
+.sub-titulo h1{
+    position: absolute;
+    font-size: 62px;
+    text-align: center;
+    left: 30%;
+    top: 85%;
+}
+
+.lojas{
+    display:flex;
+    justify-content: center;
+}
+.cards{
+    margin: 0 auto;
+}
+.botao{ 
+   background-color: rgb(0, 0, 0);
+   color: rgb(255, 255, 255);
+   font-size: 18px;
+   border-radius: 3px;  
+}   
+.botao:hover {
+	background:rgb(0, 0, 0);
+	color:#f00;
+}
+.lojas2{
+    display:flex;
+    justify-content: center;
+}
+.cards2{
+    margin: 0 auto;
+}
+.title-somos{
+    text-align: center;
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.tit{
+    position: absolute;
+}
+.tit{
+    position: absolute;
+    color: orange;
+    font-size: 18px;
+    align-items: center;
+    margin-left : 35%;
+    text-shadow: -1px 0 black, 0 1px black,1px 0 black, 0 -1px black
+}
+.tit-img{
+    margin-left: 30%;
+    margin-top: 5%;
+}
+.tit-text{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+}
+.menu-lateral ul li a{
+    color: white;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.panel p{
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+}
+.panel a button{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 187, 187);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
