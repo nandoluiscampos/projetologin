@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if(!class_exists('Rain\Tpl')){exit;}?><!DOCTYPE html>
 <!-- Coding by CodingLab | www.codinglabweb.com-->
 <html lang="en">
   <head>
@@ -19,7 +19,7 @@
   </head>
   <header>
         <div class="title">
-         <img src="/imagens/bannerPainel.jpg" alt="capa">
+         <img src="imagens/bannerPainel.jpg" alt="capa">
         </div>
 
         <div class="titulo">
@@ -27,28 +27,4 @@
             <h2>Shopping Online</h2> -->
         </div>
     </header>
-
-<body>
-
-    {include="dashboard-menu"}
-
-    <section class="overlay"></section>
-
-    <script>
-      const navBar = document.querySelector("nav"),
-        menuBtns = document.querySelectorAll(".menu-icon"),
-        overlay = document.querySelector(".overlay");
-
-      menuBtns.forEach((menuBtn) => {
-        menuBtn.addEventListener("click", () => {
-          navBar.classList.toggle("open");
-        });
-      });
-
-      overlay.addEventListener("click", () => {
-        navBar.classList.remove("open");
-      });
-    </script>
-  </body>
-
-  </html> 
+  </html>

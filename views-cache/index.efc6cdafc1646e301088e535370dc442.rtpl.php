@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if(!class_exists('Rain\Tpl')){exit;}?><!DOCTYPE html>
 <!-- Coding by CodingLab | www.codinglabweb.com-->
 <html lang="en">
   <head>
@@ -30,7 +30,7 @@
 
 <body>
 
-    {include="dashboard-menu"}
+    <?php require $this->checkTemplate("dashboard-menu");?>
 
     <section class="overlay"></section>
 

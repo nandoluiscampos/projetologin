@@ -14,6 +14,12 @@
             a.dtregister DESC";
 
             $results = $sql->select($query);
+
+            if(count($results) > 0)
+            {
+                return $results;
+
+            }
         
             echo "<pre>";
             var_dump($results);

@@ -1,33 +1,27 @@
 <?php   
-
+session_start();
 require("vendor/autoload.php");
 
 use \Slim\Slim;
-use \Main\Page;
-use \Main\PageAdmin;
 use \Rain\Tpl;
 use \Main\Model\User;
 
 $app = new Slim();
 
-$app->get('/admin', function() 
-{
-    $page = new Page();
+$app->config('debug', true);
+// functions.php tem que ficar primeiro na lista de rotas
+require_once("functions.php");
 
-    $page->setTpl("index");
+require_once("admin-login.php");
+require_once("admin.php");
 
-});
+require_once("dashboard.php");
+
+require_once("site-login.php");
+require_once("site.php");
 
 
-$app->get('/', function() 
-{
-    $page = new Page();
-
-    $page->setTpl("index");
-
-});
 
 $app->run();
 
 ?>
- <p>dasasda </p>
