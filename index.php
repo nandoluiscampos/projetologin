@@ -17,6 +17,7 @@ require_once("admin.php");
 
 require_once("dashboard.php");
 
+require_once("site-register.php");
 require_once("site-login.php");
 require_once("site.php");
 

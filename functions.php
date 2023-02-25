@@ -8,6 +8,12 @@
 
     }
 
+    function getYear()
+    {
+
+        return date('Y');
+
+    }
 
 
 

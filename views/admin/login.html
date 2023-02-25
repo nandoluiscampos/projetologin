@@ -11,7 +11,7 @@
          <div class="title">
             Ouro Center / Login
          </div>
-         <form action="login.php" method="POST">
+         <form action="/1234admin/login" method="POST">
             <div class="field">
                <input type="email" name="email" required>
                <label>E-mail</label>
@@ -36,7 +36,7 @@
                Não é membro? <a href="registrar.html">Cadastre-se</a>
             </div>
             <div class="signup-link">
-               Voltar ao Site? <a href="index.php">Voltar</a>
+               Voltar ao Site? <a href="/">Voltar</a>
             </div>
          </form>
          </div>
