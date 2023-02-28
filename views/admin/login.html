@@ -17,7 +17,7 @@
                <label>E-mail</label>
             </div>
             <div class="field">
-               <input type="password" name="senha" required>
+               <input type="password" name="password" required>
                <label>Senha</label>
             </div>
             <div class="content">

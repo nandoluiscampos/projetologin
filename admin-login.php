@@ -2,46 +2,50 @@
  
     use \Main\PageAdmin;
     use \Main\Validate;
+    use \Main\Model\User;
 
     $app->post('/1234admin/login', function() 
     {
-        if (!isset($_POST['email'] || $_POST['email'] == '' ) 
+        if (!isset($_POST['email']) || $_POST['email'] == '' )
         {
             header('Location: /1234admin/login');
             exit;
         }
 
-        if ( $deslogin = Validate::validateEmail($_POST['email'])) === false)
+        if (( $deslogin = Validate::validateEmail($_POST['email'])) === false)
         {
             header("Location: /1234admin/login");
             exit;
         }
+    
 
-
-
-        $app->post('/despassword/login', function() 
-        {
-            if (!isset($_POST['despassword'] || $_POST['despassword'] == '' ) 
+            if (!isset($_POST['password']) || $_POST['password'] == '' ) 
             {
                 header('Location:/1234admin/login');
                 exit;
             }
     
-            if ( $despassword = Validate::validatePassword($_POST['despassword'])) === false)
+            if (($despassword = Validate::validatePassword($_POST['password'])) === false)
             {
                 header("Location: /1234admin/login");
                 exit;
             }
-        });
+
+            // echo "<pre>";
+            // var_dump($deslogin);
+            // var_dump($despassword);
+            // exit;
+
+
+            User::login($_POST['email'], $_POST['password']);
+            
+            header("Location: /1234admin");
+            exit;
+
 
 
 
     });
-
-
-    echo "<pre>";
-    var_dump($deslogin);
-    exit;
 
     $app->get('/1234admin/login', function() 
     {

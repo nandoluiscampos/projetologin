@@ -620,12 +620,12 @@
         if($password != '')
         {
 
-            $password = preg_replace('/|s/','',$password);
+            $password = preg_replace('/\s/','',$password);
 
-            $passwordLenght = strien($password);
+            $passwordLenght = strlen($password);
 
 
-            if($passwordLenght >= 6 && $passwordLenght <= 20)
+            if($passwordLenght >= 4 && $passwordLenght <= 20)
             {
                 return $password;
             }
